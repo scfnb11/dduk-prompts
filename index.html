@@ -3,10 +3,49 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>뚝딱키친 AI 프롬프트</title>
 <style>
-:root{--bg:#fff8ec;--ink:#221c18;--accent:#ff7a29;--muted:#7a6d64}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.6}
-header,main{max-width:720px;margin:auto;padding:28px 16px 8px}h1{margin:0;font-size:24px}p{color:var(--muted)}
+:root{--bg:#fff8ec;--ink:#221c18;--accent:#ff7a29;--card:#fff;--muted:#7a6d64}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
+font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.6}
+header{padding:28px 16px 8px;max-width:720px;margin:auto}h1{margin:0;font-size:24px}
+header p{color:var(--muted);margin:6px 0 0}main{max-width:720px;margin:auto;padding:8px 16px 48px}
+article{background:var(--card);border-radius:16px;padding:18px 16px;margin:16px 0;box-shadow:0 1px 4px #0001}
+article .date{color:var(--accent);font-weight:700;font-size:14px}article h1,article h2{font-size:20px;margin:6px 0}
+article h3{font-size:16px;margin:16px 0 4px}pre{position:relative;background:#221c18;color:#fff8ec;border-radius:10px;
+padding:14px 12px;white-space:pre-wrap;word-break:break-word;font-size:14px}
+button.copy{position:absolute;top:8px;right:8px;border:0;border-radius:8px;background:var(--accent);color:#fff;
+font-weight:700;padding:6px 10px;font-size:13px}footer{text-align:center;color:var(--muted);font-size:13px;padding-bottom:32px}
 </style></head><body>
 <header><h1>🐱 미미 사장님 AI 프롬프트</h1><p>@dduk.ddak.kitchen 릴스에 쓴 프롬프트를 그대로 복사해서 써보세요.</p></header>
-<main><p>곧 첫 프롬프트가 올라와요!</p></main>
-</body></html>
+<main>
+<article id="d2026-10-19"><div class="date">2026-10-19</div>
+<h1>미미 사장님의 불 없이 2분 계란밥</h1>
+<p><strong>사용 도구:</strong> Higgsfield — 이미지 GPT Image 2 (9:16, 2K, high) → 영상 Seedance 2.0 (9:16, 10초, 720p, fast)</p>
+<h2>만드는 순서</h2>
+<ol>
+<li>우리 집 고양이 사진 1장으로 캐릭터(Element)를 만들어요.</li>
+<li>아래 ① 이미지 프롬프트로 첫 장면 사진을 만들어요.</li>
+<li>그 사진을 시작 이미지로 넣고 ② 영상 프롬프트로 10초 영상을 만들어요.</li>
+<li>자막은 영상 편집 앱에서 얹어요 (AI가 글자를 그리면 깨져요).</li>
+</ol>
+<h2>① 이미지 프롬프트</h2>
+<pre><code>Vertical photorealistic smartphone photo. [내 고양이] the orange tabby cat sits on a clean small studio-apartment kitchen counter right next to a white countertop microwave, body facing the camera, head turned toward the microwave door with curious wide eyes and ears forward, as if it just heard the microwave ding. Warm cozy evening light, shallow depth of field, realistic cat anatomy with four furry cat paws. The microwave display and all labels are blank or blurred and illegible. Only the cat in the frame: no people, no human hands, no human arms, no text, no letters, no logos.</code></pre>
+<h2>② 영상 프롬프트</h2>
+<pre><code>[내 고양이] the orange tabby cat on the kitchen counter. 0-2s: the microwave makes a bright ding sound, the cat snaps its head toward the microwave, ears perked, eyes wide. 2-5s: the microwave door swings open by itself, warm steam drifts out, close-up of a white bowl of rice topped with glossy soft scrambled egg in soy sauce, steaming. 5-8s: the cat uses one furry orange cat paw to slowly slide the bowl toward the camera, proud. 8-10s: the cat sits back with a satisfied, smug face, slow blink, steam rising from the bowl in the foreground. Realistic cat anatomy, only cat paws, no people, no human hands, no human arms, no text, no letters, no logos. Cozy warm evening light, handheld smartphone feel. Sound: microwave ding, soft steam, a small happy cat chirp.</code></pre>
+<h2>우리 집 고양이로 바꾸기</h2>
+<ul><li><code>[내 고양이]</code> 자리에 만든 Element를 넣고, <code>orange tabby</code>를 우리 고양이 털색(예: black and white tuxedo)으로 바꿔요.</li></ul>
+<h2>자막 예시</h2>
+<ul><li>0~2초 <code>불 없이 2분</code> / 2~5초 <code>자취 7년차 미미 사장님 비법</code> / 5~8초 <code>계란 2개 + 간장·물 2스푼, 렌지 돌리면 끝</code> / 8~10초 <code>오늘 저녁 해결 완료</code></li></ul>
+<h2>TIP</h2>
+<ul>
+<li>"no human hands"를 꼭 넣어야 고양이 발이 사람 손으로 바뀌지 않아요.</li>
+<li>실제로 만들 때는 계란 노른자를 꼭 찔러서 터짐을 막고, 30초씩 끊어 돌리며 익었는지 확인하세요.</li>
+</ul>
+</article>
+</main>
+<footer>뚝딱키친 · 매일 새 프롬프트가 위에 추가돼요</footer>
+<script>
+document.querySelectorAll('pre').forEach(function(p){var b=document.createElement('button');b.className='copy';
+b.textContent='복사';b.onclick=function(){var t=p.querySelector('code')||p;navigator.clipboard.writeText(t.innerText).then(
+function(){b.textContent='복사됨!';setTimeout(function(){b.textContent='복사'},1500)})};p.appendChild(b)});
+if(location.hash){var el=document.querySelector(location.hash);if(el)el.scrollIntoView()}
+</script></body></html>
